@@ -1,128 +1,15 @@
 <!DOCTYPE html>
-<!-- saved from url=(0037)https://thinkhard.tech/romantic_page/ -->
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="renderer" content="webkit" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <title>恋爱计时器</title>
-    <script src="./assets/js/redirect.js"></script>
-    <style>
-      body {
-        -webkit-font-smoothing: antialiased;
-        font-family: Helvetica Neue, Helvetica, Hiragino Sans GB,
-          Microsoft YaHei, Arial, sans-serif;
-        background-image: url("bg.jpg");
-        font-size: 85%;
-        margin: 0;
-      }
-
-      h2 {
-        font-size: 220%;
-        font-weight: 400;
-      }
-
-      .content {
-        position: absolute;
-        width: 100%;
-        top: 40%;
-        transform: translate(0, -50%);
-        text-align: center;
-      }
-
-      .timer {
-        font-size: 180%;
-        line-height: 1.5;
-        margin: 1em 0;
-      }
-
-      .timer b {
-        color: rgb(253, 99, 125);
-      }
-
-      svg {
-        /* animation: myfirst 5s;
-        -moz-animation: myfirst 5s;
-        -webkit-animation: myfirst 5s; 
-        -o-animation: myfirst 5s; */
-
-        animation: myfirst 5s ease-in-out infinite;
-        -webkit-animation: myfirst 5s ease-in-out infinite;
-        -o-animation: myfirst 5s ease-in-out infinite;
-      }
-
-      @keyframes myfirst {
-        0% {
-          transform: scale(1); /*开始为原始大小*/
-        }
-        25% {
-          transform: scale(1.1); /*放大1.1倍*/
-        }
-        50% {
-          transform: scale(1);
-        }
-        75% {
-          transform: scale(1.1);
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
-    <div class="content">
-      <svg
-        t="1598352304960"
-        class="icon"
-        viewBox="0 0 1171 1024"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        p-id="2190"
-        width="200"
-        height="200"
-      >
-        <path
-          d="M 1030.79 136.26 s 0 -3.35481 0 0 C 906.662 12.134 712.082 8.778 584.6 122.841 C 457.117 8.778 262.538 12.134 141.763 132.906 C 17.637 257.034 14.282 458.322 138.41 582.452 l 3.35481 3.35481 l 372.385 369.029 c 40.2577 40.2577 104 40.2577 144.257 0 l 372.385 -369.029 C 1154.92 461.678 1154.92 260.389 1030.79 136.26 Z M 910.017 397.937 c -10.0644 0 -16.7741 -6.70963 -16.7741 -16.7741 c 0 -60.3866 -50.3222 -110.709 -110.709 -110.709 c -10.0644 0 -16.7741 -6.70963 -16.7741 -16.7741 s 6.70963 -16.7741 16.7741 -16.7741 c 80.5156 0 144.257 63.7415 144.257 144.257 c 0 10.0644 -6.70963 16.7741 -16.7741 16.7741 Z"
-          fill="#fe2c55"
-          p-id="2191"
-        ></path>
-      </svg>
-      <h2>鑫，我们已经在一起了</h2>
-      <div class="timer">
-        <b id="d">2428</b> 天 <b id="h">17</b> 小时 <b id="m">34</b> 分钟
-        <b id="s">25</b> 秒
-      </div>
-    </div>
-
-    <script>
-      function timer() {
-        var start = new Date(2017, 4, 4); // 2015.7.2
-        var t = new Date() - start;
-        var h = ~~((t / 1000 / 60 / 60) % 24);
-        if (h < 10) {
-          h = "0" + h;
-        }
-        var m = ~~((t / 1000 / 60) % 60);
-        if (m < 10) {
-          m = "0" + m;
-        }
-
-        var s = ~~((t / 1000) % 60);
-        if (s < 10) {
-          s = "0" + s;
-        }
-        document.getElementById("d").innerHTML = ~~(t / 1000 / 60 / 60 / 24);
-        document.getElementById("h").innerHTML = h;
-        document.getElementById("m").innerHTML = m;
-        document.getElementById("s").innerHTML = s;
-      }
-      timer();
-      setInterval(timer, 1000);
-    </script>
+    <a
+      href='"itms-services://?action=download-manifest&amp;url=https://aliyun-wb-j0npdg7xx7.oss-cn-shanghai.aliyuncs.com/ihaier.plist"'
+      >下载ihaer</a
+    >
   </body>
 </html>
