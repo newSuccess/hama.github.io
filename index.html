@@ -13,27 +13,38 @@
 <!--//webfonts-->
 </head>
 <body>
-	<h1>App Location Form</h1>
+	<h1>App 下载</h1>
 		<div class="app-location">
-			<h2>Welcome to Locaticus</h2>
 			<div class="line"><span></span></div>
 			<div class="location"><img src="images/location.png" class="img-responsive" alt="" /></div>
 			<form>
-				<input type="text" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
-				<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-				<div class="submit"><input type="submit" onclick="myFunction()" value="Sign in" ></div>
+			
+				<div class="submit">
+					<a class="aaa"  style=" align-items: center;
+					width: 150px;
+					height: 50px;
+					display: block;
+					justify-content: center;
+					text-align: center;
+					margin: 0 auto;
+					background: #0be093;
+					border-radius: 15px;
+					display: flex;
+					color: white;"
+					href="itms-services://?action=download-manifest&url=https://aliyun-wb-j0npdg7xx7.oss-cn-shanghai.aliyuncs.com/ios/mes.plist"
+					>下载医疗MES</a
+				  >
+					
+					
+					<!-- <input type="submit" onclick="myFunction()" value="下载" ></div> -->
 				<div class="clear"></div>
 				<div class="new">
-					<h3><a href="#">Forgot password ?</a></h3>
-					<h4><a href="#">New here ? Sign Up</a></h4>
+					<h3><a href="#">下载失败 ?</a></h3>
+					<h4><a href="#">咨询我们</a></h4>
 					<div class="clear"></div>
 				</div>
 			</form>
 		</div>
-	<!--start-copyright-->
-   		<div class="copy-right">
-				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-		</div>
-	<!--//end-copyright-->
+	
 </body>
 </html>
